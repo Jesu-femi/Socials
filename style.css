@@ -241,6 +241,6 @@ main .container .left .profile {
 	margin-bottom: 1rem;
 }
 .left .notification-popup small {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 	display: block;
 }
