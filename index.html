@@ -3,7 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- Iconscout CSS -->
+		<!-- Remix icon -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
 		<!-- Main CSS -->
 		<link rel="stylesheet" href="style.css" />
 		<title>Social Media</title>
@@ -20,7 +23,7 @@
 						placeholder="Seach for Creators, Inspiration and project" />
 				</div>
 				<div class="create">
-					<label class="btn btn-primary" for="">Create</label>
+					<label class="btn btn-primary" for="create-post">Create</label>
 					<div class="profile-pics">
 						<img src="/Images/ptofile-pics.jpg" alt="ME" loading="lazy" />
 					</div>
@@ -46,20 +49,20 @@
 					<!-- ============= Side bar ============= -->
 					<div class="side-bar">
 						<a href="#" id="home" class="menu-items active">
-							<span><i class="uni home-icon"></i></span>
+							<span><i class="ri-home-gear-line"></i></span>
 							<h3>home</h3>
 						</a>
 
 						<a href="#" id="explore" class="menu-items">
-							<span><i class="uni compase-icon"></i></span>
+							<span><i class="ri-compass-line"></i></span>
 							<h3>Explore</h3>
 						</a>
 
 						<a href="#" id="notification" class="menu-items">
 							<span>
-								<i class="uni bell-icon">
-									<small class="notification-count">9+</small></i
-								>
+								<i class="ri-notification-4-line">
+									<small class="notification-count">9+</small>
+								</i>
 							</span>
 							<h3>Notification</h3>
 							<!-- Notification pop-up -->
@@ -130,51 +133,384 @@
 
 						<a href="#" id="message" class="menu-items">
 							<span
-								><i class="uni envelop-icon"
-									><small class="notification-count">6+</small></i
-								></span
-							>
+								><i class="ri-mail-line">
+									<small class="notification-count">6+</small>
+								</i>
+							</span>
 							<h3>Message</h3>
 						</a>
 
 						<a href="#" id="bookmark" class="menu-items">
-							<span><i class="uni bookmark-icon"></i></span>
+							<span><i class="ri-bookmark-line"></i></span>
 							<h3>Bookmark</h3>
 						</a>
 
 						<a href="#" id="analytics" class="menu-items">
-							<span><i class="uni chart-line-icon"></i></span>
+							<span><i class="ri-line-chart-line"></i></span>
 							<h3>Analytics</h3>
 						</a>
 
 						<a href="#" id="theme" class="menu-items">
-							<span><i class="uni palette-icon"></i></span>
+							<span><i class="ri-palette-line"></i></span>
 							<h3>Theme</h3>
 						</a>
 
 						<a href="#" id="setting" class="menu-items">
-							<span><i class="uni setting-icon"></i></span>
+							<span><i class="ri-settings-3-line"></i></span>
 							<h3>Setting</h3>
 						</a>
 					</div>
 					<!-- ====== END OF SIDE BAR ====== -->
-					<label for="create post" class="btn btn-primary">Create post</label>
+					<label for="create-post" class="btn btn-primary">Create post</label>
 				</div>
 
 				<!-- ============= MOIDDLE ============= -->
 				<div class="middle">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat non
-					neque rem, veniam aperiam dolor accusamus perferendis dolores, ipsum
-					assumenda molestiae temporibus! Necessitatibus quo quibusdam possimus
-					delectus explicabo ut est, non facilis culpa, repellat assumenda,
-					maiores officiis. Amet ad modi deleniti voluptatum, delectus
-					voluptatem assumenda corporis. Numquam, qui id repellendus et voluptas
-					exercitationem ea velit sapiente, assumenda distinctio quam
-					reprehenderit vitae iure repudiandae? Harum obcaecati eligendi,
-					eveniet tenetur sunt voluptates porro sit molestiae quaerat aliquam
-					eius ratione, non deleniti suscipit nihil veniam officia vitae
-					excepturi hic illum quos voluptatibus dolorum impedit! Soluta eius
-					quidem voluptate ratione unde ex rem fuga?
+					<!-- ============= STORIES ============= -->
+
+					<div class="stories">
+						<div class="story">
+							<div class="profile-pics">
+								<img src="Images/stori-pics.png" alt="" />
+							</div>
+							<div class="name">Your Story</div>
+						</div>
+
+						<div class="story">
+							<div class="profile-pics">
+								<img src="Images/stori-pics.png" alt="" />
+							</div>
+							<div class="name">Lilla James</div>
+						</div>
+
+						<div class="story">
+							<div class="profile-pics">
+								<img src="Images/stori-pics.png" alt="" />
+							</div>
+							<div class="name">Winner Hale</div>
+						</div>
+						<div class="story">
+							<div class="profile-pics">
+								<img src="Images/stori-pics.png" alt="" />
+							</div>
+							<div class="name">Daniel Bale</div>
+						</div>
+
+						<div class="story">
+							<div class="profile-pics">
+								<img src="Images/stori-pics.png" alt="" />
+							</div>
+							<div class="name">Jane Doe</div>
+						</div>
+
+						<div class="story">
+							<div class="profile-pics">
+								<img src="Images/stori-pics.png" alt="" />
+							</div>
+							<div class="name">Tina White</div>
+						</div>
+					</div>
+
+					<form action="" class="create-post">
+						<div class="profile-pics">
+							<img src="Images/ptofile-pics.jpg" alt="" />
+						</div>
+						<input
+							type="text"
+							placeholder=" Whats on Your Mind, Daniel"
+							id="create-post" />
+						<input type="submit" value="Post" class="btn btn-primary" />
+					</form>
+					<!-- ============= FEED ============= -->
+					<div class="feeds">
+						<!-- ====== FEED 1 ====== -->
+						<div class="feed">
+							<div class="head">
+								<div class="user">
+									<div class="profile-pics">
+										<img src="Images/dafault.jpg" alt="" />
+									</div>
+									<div class="info">
+										<h3>Lina Rose</h3>
+										<small>Dubia, 30 mins Ago</small>
+									</div>
+								</div>
+								<span class="edit"><i class="ellipsis"></i></span>
+							</div>
+							<div class="photo">
+								<img src="Images/dafault.jpg" alt="" />
+							</div>
+							<div class="action-btn">
+								<div class="interaction-btn">
+									<span><i class="heart"></i></span>
+									<span><i class="comment"></i></span>
+									<span><i class="share"></i></span>
+								</div>
+								<div class="bookmark">
+									<span><i class="boomark"></i></span>
+								</div>
+							</div>
+							<div class="liked-by">
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<p><b>Liked by</b> and <b>2.232 Others</b></p>
+							</div>
+							<div class="caption">
+								<p>
+									<b>Lena Rose</b> Lorem ipsum dolor sit amet consectetur
+									<span class="harsh-tag">#Lifestyle</span>.
+								</p>
+							</div>
+							<div class="comments text-muted">View All 277 comments</div>
+						</div>
+						<!-- ====== FEED 2 ====== -->
+						<div class="feed">
+							<div class="head">
+								<div class="user">
+									<div class="profile-pics">
+										<img src="Images/dafault.jpg" alt="" />
+									</div>
+									<div class="info">
+										<h3>Lina Rose</h3>
+										<small>Dubia, 30 mins Ago</small>
+									</div>
+								</div>
+								<span class="edit"><i class="ellipsis"></i></span>
+							</div>
+							<div class="photo">
+								<img src="Images/dafault.jpg" alt="" />
+							</div>
+							<div class="action-btn">
+								<div class="interaction-btn">
+									<span><i class="heart"></i></span>
+									<span><i class="comment"></i></span>
+									<span><i class="share"></i></span>
+								</div>
+								<div class="bookmark">
+									<span><i class="boomark"></i></span>
+								</div>
+							</div>
+							<div class="liked-by">
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<p><b>Liked by</b> and <b>2.232 Others</b></p>
+							</div>
+							<div class="caption">
+								<p>
+									<b>Lena Rose</b> Lorem ipsum dolor sit amet consectetur
+									<span class="harsh-tag">#Lifestyle</span>.
+								</p>
+							</div>
+							<div class="comments text-muted">View All 277 comments</div>
+						</div>
+						<!-- ====== FEED 3 ====== -->
+						<div class="feed">
+							<div class="head">
+								<div class="user">
+									<div class="profile-pics">
+										<img src="Images/dafault.jpg" alt="" />
+									</div>
+									<div class="info">
+										<h3>Lina Rose</h3>
+										<small>Dubia, 30 mins Ago</small>
+									</div>
+								</div>
+								<span class="edit"><i class="ellipsis"></i></span>
+							</div>
+							<div class="photo">
+								<img src="Images/dafault.jpg" alt="" />
+							</div>
+							<div class="action-btn">
+								<div class="interaction-btn">
+									<span><i class="heart"></i></span>
+									<span><i class="comment"></i></span>
+									<span><i class="share"></i></span>
+								</div>
+								<div class="bookmark">
+									<span><i class="boomark"></i></span>
+								</div>
+							</div>
+							<div class="liked-by">
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<p><b>Liked by</b> and <b>2.232 Others</b></p>
+							</div>
+							<div class="caption">
+								<p>
+									<b>Lena Rose</b> Lorem ipsum dolor sit amet consectetur
+									<span class="harsh-tag">#Lifestyle</span>.
+								</p>
+							</div>
+							<div class="comments text-muted">View All 277 comments</div>
+						</div>
+						<!-- ====== FEED 4 ====== -->
+						<div class="feed">
+							<div class="head">
+								<div class="user">
+									<div class="profile-pics">
+										<img src="Images/dafault.jpg" alt="" />
+									</div>
+									<div class="info">
+										<h3>Lina Rose</h3>
+										<small>Dubia, 30 mins Ago</small>
+									</div>
+								</div>
+								<span class="edit"><i class="ellipsis"></i></span>
+							</div>
+							<div class="photo">
+								<img src="Images/dafault.jpg" alt="" />
+							</div>
+							<div class="action-btn">
+								<div class="interaction-btn">
+									<span><i class="heart"></i></span>
+									<span><i class="comment"></i></span>
+									<span><i class="share"></i></span>
+								</div>
+								<div class="bookmark">
+									<span><i class="boomark"></i></span>
+								</div>
+							</div>
+							<div class="liked-by">
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<p><b>Liked by</b> and <b>2.232 Others</b></p>
+							</div>
+							<div class="caption">
+								<p>
+									<b>Lena Rose</b> Lorem ipsum dolor sit amet consectetur
+									<span class="harsh-tag">#Lifestyle</span>.
+								</p>
+							</div>
+							<div class="comments text-muted">View All 277 comments</div>
+						</div>
+						<!-- ====== FEED 5 ====== -->
+						<div class="feed">
+							<div class="head">
+								<div class="user">
+									<div class="profile-pics">
+										<img src="Images/dafault.jpg" alt="" />
+									</div>
+									<div class="info">
+										<h3>Lina Rose</h3>
+										<small>Dubia, 30 mins Ago</small>
+									</div>
+								</div>
+								<span class="edit"><i class="ellipsis"></i></span>
+							</div>
+							<div class="photo">
+								<img src="Images/dafault.jpg" alt="" />
+							</div>
+							<div class="action-btn">
+								<div class="interaction-btn">
+									<span><i class="heart"></i></span>
+									<span><i class="comment"></i></span>
+									<span><i class="share"></i></span>
+								</div>
+								<div class="bookmark">
+									<span><i class="boomark"></i></span>
+								</div>
+							</div>
+							<div class="liked-by">
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<p><b>Liked by</b> and <b>2.232 Others</b></p>
+							</div>
+							<div class="caption">
+								<p>
+									<b>Lena Rose</b> Lorem ipsum dolor sit amet consectetur
+									<span class="harsh-tag">#Lifestyle</span>.
+								</p>
+							</div>
+							<div class="comments text-muted">View All 277 comments</div>
+						</div>
+						<!-- ====== FEED 6 ====== -->
+						<div class="feed">
+							<div class="head">
+								<div class="user">
+									<div class="profile-pics">
+										<img src="Images/dafault.jpg" alt="" />
+									</div>
+									<div class="info">
+										<h3>Lina Rose</h3>
+										<small>Dubia, 30 mins Ago</small>
+									</div>
+								</div>
+								<span class="edit"><i class="ellipsis"></i></span>
+							</div>
+							<div class="photo">
+								<img src="Images/dafault.jpg" alt="" />
+							</div>
+							<div class="action-btn">
+								<div class="interaction-btn">
+									<span><i class="heart"></i></span>
+									<span><i class="comment"></i></span>
+									<span><i class="share"></i></span>
+								</div>
+								<div class="bookmark">
+									<span><i class="boomark"></i></span>
+								</div>
+							</div>
+							<div class="liked-by">
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<p><b>Liked by</b> and <b>2.232 Others</b></p>
+							</div>
+							<div class="caption">
+								<p>
+									<b>Lena Rose</b> Lorem ipsum dolor sit amet consectetur
+									<span class="harsh-tag">#Lifestyle</span>.
+								</p>
+							</div>
+							<div class="comments text-muted">View All 277 comments</div>
+						</div>
+						<!-- ====== FEED 7 ====== -->
+						<div class="feed">
+							<div class="head">
+								<div class="user">
+									<div class="profile-pics">
+										<img src="Images/dafault.jpg" alt="" />
+									</div>
+									<div class="info">
+										<h3>Lina Rose</h3>
+										<small>Dubia, 30 mins Ago</small>
+									</div>
+								</div>
+								<span class="edit"><i class="ellipsis"></i></span>
+							</div>
+							<div class="photo">
+								<img src="Images/dafault.jpg" alt="" />
+							</div>
+							<div class="action-btn">
+								<div class="interaction-btn">
+									<span><i class="heart"></i></span>
+									<span><i class="comment"></i></span>
+									<span><i class="share"></i></span>
+								</div>
+								<div class="bookmark">
+									<span><i class="boomark"></i></span>
+								</div>
+							</div>
+							<div class="liked-by">
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<span><img src="Images/dafault.jpg" alt="" /></span>
+								<p><b>Liked by</b> and <b>2.232 Others</b></p>
+							</div>
+							<div class="caption">
+								<p>
+									<b>Lena Rose</b> Lorem ipsum dolor sit amet consectetur
+									<span class="harsh-tag">#Lifestyle</span>.
+								</p>
+							</div>
+							<div class="comments text-muted">View All 277 comments</div>
+						</div>
+					</div>
 				</div>
 				<!-- ============= RIGHT ============= -->
 				<div class="right">
