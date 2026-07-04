@@ -19,7 +19,7 @@ html {
 	--danger-colour: hsl(0, 95%, 65%);
 	--success-colour: hsl(120, 95%, 65%);
 	--primary-colour: hsl(252, 75%, 60%);
-	--swcindary-colour: hsl(252, 100%, 90%);
+	--secondary-colour: hsl(252, 100%, 90%);
 	--gray-colour: hsl(252, 15%, 65%);
 	--light-colour: hsl(252, 30%, 95%);
 	--white-colour: hsl(252, 30%, 100%);
@@ -33,6 +33,7 @@ html {
 	--card-border-radius: 1rem;
 	--btn-padding: 0.6rem 2rem;
 	--search-padding: 0.6rem 1rem;
+
 	--Sticky-top-left: 5.4rem;
 	--Sticky-top-right: -18rem;
 }
@@ -80,6 +81,21 @@ img {
 .text-muted {
 	color: var(--gray-colour);
 }
+.search-bar {
+	background: var(--light-colour);
+	border-radius: var(--border-radius);
+	padding: var(--search-padding);
+}
+.search-bar input[type="search"] {
+	background: transparent;
+	width: 30vw;
+	margin-left: 1rem;
+	font-size: 0.9rem;
+	color: var(--dark-colour);
+}
+.search-bar input[type="search"]::placeholder {
+	color: var(--gray-colour);
+}
 
 /* =========== NAV BAR =========== */
 nav {
@@ -94,21 +110,6 @@ nav .container {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-}
-nav .search-bar {
-	background: var(--light-colour);
-	border-radius: var(--border-radius);
-	padding: var(--search-padding);
-}
-nav .search-bar input[type="search"] {
-	background: transparent;
-	width: 30vw;
-	margin-left: 1rem;
-	font-size: 0.9rem;
-	color: var(--dark-colour);
-}
-nav .search-bar input[type="search"]::placeholder {
-	color: var(--gray-colour);
 }
 nav .create {
 	display: flex;
@@ -249,7 +250,6 @@ main .container .left .profile {
 }
 
 /* ===============  Middle =============== */
-
 .middle .stories {
 	display: flex;
 	justify-content: space-between;
@@ -306,8 +306,8 @@ main .container .left .profile {
 .middle .stories .story:nth-child(6) {
 	background: url(Images/story-2.jpg) no-repeat center center/cover;
 }
-/* ===============  CRAETE POST=============== */
 
+/* ===============  CRAETE POST=============== */
 .middle .create-post {
 	width: 100%;
 	display: flex;
@@ -327,8 +327,8 @@ main .container .left .profile {
 	background: transparent;
 	color: var(--dark-colour);
 }
-/* ===============  FEEDS =============== */
 
+/* ===============  FEEDS =============== */
 .middle .feeds .feed {
 	background: var(--white-colour);
 	border-radius: var(--card-border-radius);
@@ -375,4 +375,149 @@ main .container .left .profile {
 }
 .middle .liked-by p {
 	margin-left: 0.5rem;
+}
+/* ===============  RIGHT =============== */
+main .container .right {
+	height: max-content;
+	position: sticky;
+	top: var(--Sticky-top-right);
+	bottom: 0;
+	border: 1px solid purple;
+}
+.right .messages {
+	background: var(--white-colour);
+	border-radius: var(--card-border-radius);
+	padding: var(--card-padding);
+}
+.right .messages .heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+.right .messages i {
+	font-size: 1.4rem;
+}
+.right .messages .search-bar {
+	display: flex;
+	margin-bottom: 1rem;
+}
+.right .messages .category {
+	display: flex;
+	justify-content: center;
+	column-gap: 3rem;
+	margin-bottom: 1rem;
+}
+.right .messages .category h6 {
+	width: 100%;
+	align-items: center;
+	border-bottom: 4px solid var(--light-colour);
+	padding: 0.5rem;
+	font-size: 0.85rem;
+}
+.right .messages .category .active {
+	border-color: var(--dark-colour);
+}
+.right .messages .message-request {
+	color: var(--primary-colour);
+}
+.right .messages .message {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
+	align-items: start;
+}
+.right .messages .profile-pics {
+	position: relative;
+	overflow: visible;
+}
+.right .messages .profile-pics img {
+	border-radius: 50%;
+}
+.right .messages .message:last-child {
+	margin: 0;
+}
+.right .messages .message p {
+	font-size: 0.8rem;
+}
+.right .messages .message .profile-pics .active {
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 50%;
+	border: 1px solid var(--white-colour);
+	background: var(--success-colour);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.right .friend-request {
+	margin-top: 1rem;
+}
+.right .friend-request h4 {
+	color: var(--gray-colour);
+	margin-block: 1rem;
+}
+.right .request {
+	background: var(--white-colour);
+	padding: var(--card-padding);
+	border-radius: var(--card-border-radius);
+	margin-bottom: 0.7rem;
+}
+.right .request .info {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+.right .request .action {
+	display: flex;
+	gap: 1rem;
+}
+
+/* =============== THEME COSTUMIZATION  =============== */
+.custumize-theme {
+	position: fixed;
+	background: rgba(255, 255, 255, 0.5);
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	text-align: center;
+	display: grid;
+	place-items: center;
+	font-size: 0.9rem;
+}
+.custumize-theme .card {
+	background: var(--white-colour);
+	padding: 2rem;
+	border-radius: var(--card-border-radius);
+	width: 50%;
+}
+/* =============== Font Size  =============== */
+.custumize-theme .font-size {
+	margin-top: 5rem;
+}
+.custumize-theme .font-size > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--light-colour);
+	padding: var(--search-padding);
+	border-radius: var(--card-border-radius);
+}
+.custumize-theme .choose-size {
+	background: var(--secondary-colour);
+	height: 0.3rem;
+	width: 100%;
+	margin-inline: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.custumize-theme .choose-size span {
+	height: 1rem;
+	width: 1rem;
+	background: var(--secondary-colour);
+	border-radius: 50%;
+	cursor: pointer;
 }
